@@ -85,6 +85,7 @@ class TodoListState extends State<TodoList> {
       builder: (context, snapshot) {
         if(snapshot.hasData) {
           if(snapshot.data.length != 0) {
+            count = snapshot.data.length;
             return ListView.builder(
               itemCount: snapshot.data.length,
               itemBuilder: (context, index) {
@@ -121,6 +122,7 @@ class TodoListState extends State<TodoList> {
       builder: (context, snapshot) {
         if(snapshot.hasData) {
           if(snapshot.data.length != 0) {
+            count = snapshot.data.length;
             return ListView.builder(
               itemCount: snapshot.data.length,
               itemBuilder: (context, index) {
